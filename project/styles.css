@@ -1,0 +1,76 @@
+/* reset styles*/
+html {
+    font-size: 16px;
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+body {
+  background: linear-gradient(135deg, #e0e0e0, #ffffff);
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1 {
+  text-align: center;
+    background-color: #FF0000; 
+  }
+
+  .navbar ul{
+    list-style-type: none;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+  }
+  .navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+  }
+  .navbar a:hover{
+    background-color: #FF0000;
+  }
+  .navbar li{
+    float: left;
+  }
+  .cleats-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cleats-gallery figure {
+    width: 250px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cleats-gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+
+
