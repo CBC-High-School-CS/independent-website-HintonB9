@@ -8,9 +8,26 @@ img{
     height: auto;
     width: auto;
 }
+header {
+  background: #ff0000;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 4px solid black;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
 body {
   background: linear-gradient(135deg, #e0e0e0, #ffffff);
   font-family: 'Poppins', sans-serif;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+body.fade-out {
+  opacity: 0;
 }
 
 .wrapper {
@@ -29,46 +46,57 @@ h1 {
     background-color: #FF0000; 
   }
 
-  .navbar ul{
-    list-style-type: none;
-    background-color: black;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #000;
   }
-  .navbar a{
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    display: block;
+    padding: 15px;
     color: white;
     text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
+    transition: background 0.3s;
   }
-  .navbar a:hover{
-    background-color: #FF0000;
+  
+  .navbar a:hover {
+    background-color: #c70000;
+    border-radius: 5px;
   }
-  .navbar li{
-    float: left;
-  }
-  .cleats-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
+  
+.cleats-gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .cleats-gallery figure {
-    width: 250px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 280px;
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.cleats-gallery figure:hover {
+  transform: scale(1.03);
 }
 
 .cleats-gallery img {
-    width: 100%;
-    border-radius: 8px;
+  width: 100%;
+  border-radius: 8px;
 }
 
 
