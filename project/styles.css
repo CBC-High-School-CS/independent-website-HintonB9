@@ -22,9 +22,13 @@ h1 {
 }
 body {
   background: linear-gradient(135deg, #e0e0e0, #ffffff);
-  font-family: 'Poppins', sans-serif;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 body.fade-out {
   opacity: 0;
